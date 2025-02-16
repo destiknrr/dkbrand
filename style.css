@@ -125,6 +125,10 @@ section {
     padding: 60px 0;
 }
 
+.heading-margin {
+  margin-top: 45px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -251,6 +255,27 @@ section {
     text-align: right;
 }
 
+.card-skill {
+  position: relative;
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(50,50,50,0.6) 50%, transparent 100%);
+  border: 5px solid #222;
+}
+
+.img-round {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
 .icon-tech {
     color: rgb(32, 34, 75);
     font-size: 50px;
@@ -305,6 +330,16 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.icon-arrow{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 80%;
+  left: 80%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
