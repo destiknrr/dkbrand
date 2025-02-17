@@ -33,18 +33,20 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0px 2%;
-    background-color:transparent;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 2vw; /* Gunakan vw untuk memastikan proporsional */
+  background-color: transparent;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box; /* Pastikan padding tidak menambah lebar total */
+  overflow: hidden; /* Mencegah overflow horizontal */
 }
 
 
