@@ -75,6 +75,17 @@ header {
   height: auto;
 }
 
+.bg-grey {
+  background-color: #d1d1d1;
+}
+
+.card {
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 
 /* style navbar & sidebar */
 
@@ -170,6 +181,8 @@ display: none;
     color: #ffff;
 }
 
+
+/* img style  */
 .egg-gif {
     max-width: 80%;
 }
@@ -186,6 +199,15 @@ display: none;
   margin: 0%;
 }
 
+.img-round {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+/* progress bar style  */
 .progress-container {
     width: 100%;
     background-color: #bdbdbd;
@@ -238,17 +260,7 @@ display: none;
     font-weight:lighter;
 }
 
-.bg-grey {
-    background-color: #d1d1d1;
-}
-
-
-.card {
-    padding: 40px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
+/* card style  */
 
 .card-contact {
   padding: 10px;
@@ -275,14 +287,7 @@ display: none;
   border: 5px solid #222;
 }
 
-.img-round {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  filter: grayscale(100%);
-}
-
+/* icon style  */
 
 .icon-tech {
     color: rgb(32, 34, 75);
@@ -309,6 +314,8 @@ display: none;
   width: 50%;
 }
 
+
+/* style for project and certificate  */
 .image {
   display: block;
   max-width: 200%;
@@ -395,6 +402,7 @@ footer {
   width: 100%;
 }
 
+/* footer style  */
 .footer-container {
   display: flex;
   flex-wrap: wrap;
