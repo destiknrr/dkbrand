@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* general */
 
 * {
     box-sizing: border-box;
@@ -49,6 +50,33 @@ header {
   overflow: hidden; /* Mencegah overflow horizontal */
 }
 
+.heading-margin {
+  margin-top: 45px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-highlight {
+    color: #eaa42a;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+/* style navbar & sidebar */
 
 nav ul {
   width: 100%;
@@ -123,29 +151,7 @@ display: none;
   }
 }
 
-section {
-    padding: 60px 0;
-}
-
-.heading-margin {
-  margin-top: 45px;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-highlight {
-    color: #eaa42a;
-}
+/* style button */
 
 .btn {
     padding: 10px 30px;
@@ -164,29 +170,20 @@ section {
     color: #ffff;
 }
 
+.egg-gif {
+    max-width: 80%;
+}
 
-
-.img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
+.img-about {
+  max-width: 70%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .img-rate {
   width:80%;
   height: auto;
   margin: 0%;
-}
-
-.img-responsive {
-    width: 100%;
-    height: auto;
-}
-
-.img-small {
-    max-width: 70%;
-    height: auto;
-    border-radius: 10px;
 }
 
 .progress-container {
@@ -285,6 +282,7 @@ section {
   border-radius: 50%;
   filter: grayscale(100%);
 }
+
 
 .icon-tech {
     color: rgb(32, 34, 75);
