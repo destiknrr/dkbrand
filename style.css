@@ -417,13 +417,6 @@ input[type=submit]:hover {
   width: 100%;
 }
 
-footer {
-  color: rgb(0, 0, 0);
-  padding: 20px 0;
-  text-align: center;
-  width: 100%;
-}
-
 /* footer style  */
 footer {
   display: flex;
