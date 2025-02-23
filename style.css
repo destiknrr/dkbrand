@@ -13,7 +13,7 @@
   }
   
   [class*="col-"] {
-    float: left;
+    float:left;
     padding: 15px;
   }
 
@@ -39,15 +39,15 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0px 2vw; /* Gunakan vw untuk memastikan proporsional */
+  /* padding: 0px 2vw; Gunakan vw untuk memastikan proporsional */
   background-color: transparent;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);    
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  box-sizing: border-box; /* Pastikan padding tidak menambah lebar total */
-  overflow: hidden; /* Mencegah overflow horizontal */
+  box-sizing: border-box;
+  /* overflow: hidden; Mencegah overflow horizontal */
 }
 
 .heading-margin {
@@ -159,6 +159,28 @@ display: none;
 @media(max-width: 400px){
   .sidebar{
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 
@@ -517,27 +539,6 @@ footer {
   filter: drop-shadow(0 0 10px #ffffff);
 }
 
-@media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
