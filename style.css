@@ -39,7 +39,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  /* padding: 0px 2vw; Gunakan vw untuk memastikan proporsional */
+  padding: 0px 2vw;
   background-color: transparent;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);    
   display: flex;
@@ -47,7 +47,7 @@ header {
   align-items: center;
   z-index: 100;
   box-sizing: border-box;
-  /* overflow: hidden; Mencegah overflow horizontal */
+  overflow: hidden; 
 }
 
 .heading-margin {
@@ -128,7 +128,7 @@ nav a.active{
   z-index: 999;
   background-color: rgb(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  box-shadow: -10 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   align-items: flex-start;
@@ -156,9 +156,9 @@ display: none;
   }
 }
 
-@media(max-width: 400px){
-  .sidebar{
-    width: 100%;
+@media (max-width: 600px) {
+  .sidebar {
+    width: 80%;
   }
 }
 
