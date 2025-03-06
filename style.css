@@ -50,10 +50,6 @@ header {
   overflow: hidden; 
 }
 
-.heading-margin {
-  margin-top: 45px;
-}
-
 .text-center {
     text-align: center;
 }
@@ -86,9 +82,12 @@ header {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
+.title {
+  margin-top: 120px;
+}
+
 
 /* style navbar & sidebar */
-
 nav ul {
   width: 100%;
   list-style: none;
@@ -115,7 +114,7 @@ nav a:hover{
   border-bottom: #dc9f0f solid 3px;
 } 
 
-nav a.active{
+.active{
   border-bottom: #dc9f0f solid 3px;
 }
 
@@ -185,7 +184,6 @@ display: none;
 }
 
 /* style button */
-
 .btn {
     padding: 10px 30px;
     border-radius: 50px;
@@ -199,6 +197,11 @@ display: none;
     color: #ffff;
 }
 
+.button {
+  justify-content: flex-end;
+}
+
+
 .white {
     color: #ffff;
 }
@@ -207,18 +210,36 @@ display: none;
 /* img style  */
 .egg-gif {
     max-width: 80%;
+    transition: 0.3s;
+}
+
+.egg-gif:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .img-about {
   max-width: 70%;
   height: auto;
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+.img-about:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .img-rate {
   width:80%;
   height: auto;
   margin: 0%;
+  transition: 0.3s;
+}
+
+.img-rate:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 .img-round {
@@ -307,13 +328,25 @@ display: none;
   align-items: center;
   background: radial-gradient(circle, rgba(50,50,50,0.6) 50%, transparent 100%);
   border: 5px solid #222;
+  transition: 0.3s;
+}
+
+.card-skill:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* icon style  */
-
 .icon-tech {
     color: rgb(32, 34, 75);
     font-size: 50px;
+}
+
+.icon-tech:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  color: #eaa42a;
 }
 
 .icon-contact {
@@ -321,6 +354,12 @@ display: none;
     font-size: 30px;
     text-align: center;
     display: block;
+    transition: 0.3s;
+}
+
+.icon-contact:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .icon-project {
